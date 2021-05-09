@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+  <div class="container">
+
+    <br>
+    <h4>The source is:</h4>
+    <p>{{ source }}</p>
+    <br>
+    <h4>The top 3 names with minimum edit distance are:</h4>
+
+    {% for i in top_names %}
+      <p>{{ i }}</p>
+    {% endfor%}
+
+  </div>
+
+
+{% endblock %}

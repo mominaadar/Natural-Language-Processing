@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EditDistance App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <style>
+    .headerclass{
+      text-align: center;
+      font-family: 'Noto Sans JP', sans-serif;
+      background-color: #303030;
+      color: white;
+    }
+    </style>
+
+  </head>
+  <body>
+    {% include 'includes/navbar.html' %}
+    <div class="">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
